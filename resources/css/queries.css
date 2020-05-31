@@ -1,0 +1,268 @@
+
+
+/* from big tablets to 1200px (widths smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+    .section-about, .section-workers, .section-instructions, .section-further, .section-bestOfIt, 
+    footnote {
+        padding: 0px 20px; 
+    }
+
+    .section2and3 .donateButton {
+        width: 25%;
+        text-align: center;  
+    }
+    
+}
+
+@media only screen and (max-width: 1150px) { /* iPad Landscape */
+    .main-nav li {
+        margin-left: 5px; 
+    }
+    .main-nav li:last-child a:link, .main-nav li:last-child a:visited {
+        margin-left: 75px;
+        margin-right: 100px;  
+    }
+
+    h1 {
+        top: 200px; 
+    }
+
+    .section2and3 .donateButton {
+        width: 27%; 
+        text-align: center; 
+    }
+
+    .selectOptions {
+        font-size: 15px; 
+    }
+
+    .foodDonations .icon-b {
+        margin-top: 26px; 
+        margin-left: 23px; 
+    }
+
+    .inputBox {
+        margin-top: 30px; 
+        margin-left: 3px; 
+    }
+
+    .donationStep p {
+        padding-left: 100px; 
+    }
+
+    .instructions ul {
+        line-height: 35px; 
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .main-nav li:last-child a:link, .main-nav li:last-child a:visited {
+        margin-left: 35px;
+        margin-right: 20px;  
+    }
+
+    h1 {
+        font-size: 35px; 
+        left: 20px; 
+        padding: 10px; 
+        top: 150px;
+        width: 40%;  
+    }
+
+    .section2and3 .donateButton {
+        width: 35%;
+        text-align: center;  
+    }
+
+}
+
+@media only screen and (max-width: 870px) {
+    .main-nav li {
+        font-size: 90%; 
+    }
+    .main-nav li:last-child a:link, .main-nav li:last-child a:visited {
+        margin-right: 25px; 
+    }
+
+}
+
+@media only screen and (max-width: 815px) { /* iPhone XR Landscape */
+    .main-nav li {
+        font-size: 80%; 
+    }
+    .main-nav li:last-child a:link, .main-nav li:last-child a:visited {
+        margin-left: 15px; 
+        margin-right: 65px; 
+        padding: 10px; 
+    }
+
+    h1 {
+        font-size: 25px; 
+        left: 20px; 
+        padding: 10px; 
+        top: 175px;
+        width: 40%;  
+    }
+
+    .map {
+        margin-left: 1%;
+        width: 99%;
+        margin-bottom: 5px;  
+    }
+
+    .table {
+        width: 99%; 
+        height: 200px;
+        margin-top: 0px;  
+    }
+
+    .section-instructions .donateButton {
+        margin-left: 1%; 
+    }
+
+    .section-about img, .section-workers img {
+        width: 350px; 
+    }
+
+    .section2and3 .donateButton {
+        width: 36%;
+        margin-bottom: 20px;
+        text-align: center; 
+    }
+
+    .foodDonations .icon-b {
+        margin-top: 35px; 
+        margin-left: 23px;
+        font-size: 35px;  
+    }
+
+    .inputBox {
+        margin-top: 34px; 
+        margin-left: 3px;
+        padding-right: 40px;  
+    }
+
+    .options .icon-b {
+        font-size: 32px; 
+        margin-top: 40px;
+        margin-left: 30px;  
+    }
+
+    .foodCatalog {
+        width: 99%; 
+        margin-left: 1%;
+    }
+    
+
+}
+
+@media only screen and (max-width: 770px) { /* iPad Portrait */
+    .main-nav li {
+        font-size: 70%; 
+    }
+    .main-nav li:last-child a:link, .main-nav li:last-child a:visited {
+        margin-right: 35px; 
+    }
+
+    h1 {
+        top: 200px; 
+        width: 60%; 
+        font-size: 25px; 
+    }
+
+    .instructions ul {
+        line-height: 35px;
+    }
+
+    .section2and3 .donateButton {
+        width: 48%;
+        text-align: center;  
+    }
+}
+
+@media only screen and (max-width: 712px) { /* iPhone XR Portrait */
+    .logo {
+        height: 50px;
+        margin-top: 25px;
+    }
+    
+    .main-nav {
+        display: none; 
+    }
+    .dropdown {
+        display: block; 
+    }
+
+    h1 {
+        font-size: 25px; 
+        left: 20px; 
+        padding: 10px; 
+        width: 75%;
+        top: 250px; 
+    }
+
+    .section-about img, .section-workers img, .section-about p, .section-workers p {
+        margin-right: 10px; 
+    }
+
+    .section-instructions .donateButton {
+        width: 25%;
+        margin-bottom: 30px;
+    }
+
+    .money, .food {
+        margin-bottom: 30px; 
+    }
+
+    .foodCatalog {
+        margin-top: 0px; 
+        width: 99%; 
+        margin-left: 1%; 
+    }
+
+    .map {
+        margin-top: 10px; 
+    }
+
+}
+
+@media only screen and (max-width: 585px) {
+
+    .section2and3 .donateButton {
+        width: 55%; 
+        text-align: center; 
+    }
+}
+
+@media only screen and (max-width: 480px) { /* Anything below iPhone 6 */
+    h1 {
+        font-size: 20px; 
+        left: 10px; 
+        padding: 10px; 
+        width: 75%;
+        top: 200px; 
+    }
+
+    .section-instructions .donateButton {
+        width: 30%; 
+    }
+
+    .section2and3 .donateButton {
+        width: 42%; 
+        text-align: center; 
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
