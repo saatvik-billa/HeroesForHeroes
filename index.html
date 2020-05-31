@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Heroes for Heroes</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="row">
+                <a href="index.html"><img src="resources/img/mainLogo.png" alt="logo" class="logo"></a>
+                <ul class="main-nav">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#help">How To Help</a></li>
+                    <li><a href="#further">A Step Further</a></li>
+                    <li><a href="#best">Making The Best Of It</a></li>
+                    <li><a href="dashboard.html" class="g-signin2" data-onsuccess="onSignIn">Log In</a></li>
+                </ul>
+                <div class="dropdown">
+                    <button class="dropbtn"><ion-icon name="menu-outline"></ion-icon></button>
+                    <div class="dropdown-content">
+                        <a class="link" href="#about">About Us</a>
+                        <a class="link" href="#help">How To Help</a>
+                        <a class="link" href="#further">A Step Further</a>
+                        <a class="link" href="#best">Making The Best Of It</a>
+                        <a href="dashboard.html" class="log-in link">Log In</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="main-saying">
+            <h1> They're giving us everything. <br> Now it's our turn.</h1>
+        </div>
+    </header>
+
+    <section class="section-about" id="about">
+        <div class="row">
+            <h2>About Us</h2>
+        </div>
+
+        <div class="row">
+            <div class="col span-1-of-2 section2and3">
+                Heroes for Heroes aims to clear up the intricacy that exists betweens 
+                donors and recipients and establishes a clear and user-friendly interface 
+                that brings the organizations and people closer together. The purpose of our 
+                website is to allow the general public to donate money to buy food for frontline 
+                workers. The donations are distributed among our suppliers and every couple of days 
+                the orders are acummulated and sent out to the organizations that were specified. 
+                Being a non-profit organization, we do not take any cuts from the donations made, 
+                but rather ensure that every single penny donated is being used to help the ones 
+                who've been helping us. Scroll down to see more information, or press the button 
+                below to go straight to donating. Thank you and stay safe!
+                
+                <a href="#help" class="donateButton">Donate Now</a>  
+            </div>
+
+            <div class="col span-1-of-2">
+                <img src="resources/img/aboutSection.jpg"> <!-- Photo by Dre Nieto on Unsplash -->
+                <p>Photo by Dre Nieto on Unsplash</p>
+            </div> 
+
+        </div>
+
+    </section>
+
+    <section class="section-workers">
+        <div class="row">
+            <h2>Frontline Workers</h2>
+        </div>
+
+        <div class="row">
+            <div class="col span-1-of-2 section2and3">
+                Unlike most of us who have the luxury of working from home and good safety from  
+                the virus, there are certain people out there who have to walk out in the face 
+                of danger everyday so that they can help others. We are referring to the frontline 
+                workers, the ones who can't work from home because their jobs require that they serve 
+                us. They don't have extra powers to fend off the virus, so the amount of risk that 
+                they have been taking is astronomical. It's been quite a while since they've been 
+                bravely doing this, so it's time that we show them some appreciation and love by 
+                helping them out.
+                <br>
+                Frontliners include:
+                <ul>
+                    <li>Doctors</li>
+                    <li>Nurses</li>
+                    <li>Department Store Employees</li>
+                    <li>Grocery Personnel</li>
+                    <li>Police Officers</li>
+                    <li>Emergency Personnel</li>
+                </ul>
+            </div>
+
+            <div class="col span-1-of-2">
+                <img src="resources/img/workerSection.jpg"> <!-- Photo by Luke Jones on Unsplash -->
+                <p>Photo by Luke Jones on Unsplash</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section-instructions" id="help">
+        <div class="row">
+            <h2>How to Help</h2>
+        </div>
+
+        <div class="row">
+            <div class="col span-1-of-4 instructions">
+                <ul>
+                    <li> <ion-icon name="pin-outline" class="icon-s"></ion-icon>
+                        Each marker represents a location that is accepting donations </li>
+                    <li> <ion-icon name="location-outline" class="icon-s"></ion-icon>
+                        Click on the location that you want to donate to </li>
+                    <li> <ion-icon name="pricetags-outline" class="icon-s"></ion-icon>
+                        When you click 'Donate Now' you will see two icons pop up. Nothing
+                        will pop up if the location bar is empty. </li>
+                    <li> <ion-icon name="book-outline" class="icon-s"></ion-icon>
+                        Click on the money icon if you wish to donate cash, and the food
+                        icon if you would like to donate food</li>
+                    <li> <ion-icon name="card-outline" class="icon-s"></ion-icon>
+                        Clicking on money will bring out the payment form, and clicking on 
+                        food will open up the catalog of food that you can choose to order and
+                        donate.  
+                </ul>
+            </div>
+
+            <div class="col span-3-of-4 donationActions">
+                <div class="map"></div>
+                <div class="table">
+                    <ul class="locations">
+                        <!--<li class="individual">
+                            <h4>Name of the Place</h4>
+                            <p>Address of the Place</p>
+                            <button class="selectButton">Select</button>
+                        </li>-->
+                    </ul>
+                </div>
+                <a href="#money" class="donateButton selectOptions">Donate Now</a>
+                <div class="foodDonations">
+                    <ion-icon name="location-outline" class="icon-b"></ion-icon>
+                    <input type="text" class="inputBox" placeholder="Location..." required>
+                </div>
+                <div class="options">
+                    <!--<ion-icon name="cash-outline" class="icon-b money" id="money"></ion-icon>
+                    <ion-icon name="fast-food-outline" class="icon-b food"></ion-icon>-->
+                </div>
+                <div class="clearfix"></div>
+                <div class="donationFood">
+                    <!--<div class="foodCatalog"></div>-->
+                </div>
+                
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section-further" id="further">
+        <div class="row">
+            <h2>A Step Further</h2>
+        </div>
+
+        <div class="row">
+            <div class="col span-1-of-2 step1">
+                <h3>Become a Supplier</h3>
+                <div class="donationStep">
+                    <div>1</div>
+                    <p>Email us at example@gmail.com</p>
+                </div>
+                <div class="donationStep">
+                    <div>2</div>
+                    <p>We will provide some login information</p>
+                </div>
+                <div class="donationStep">
+                    <div>3</div>
+                    <p>We will enter your locations in the database</p>
+                </div>
+                <div class="donationStep">
+                    <div>4</div>
+                    <p>We will set up the payment information</p>
+                </div>
+            </div>
+
+            <div class="col span-1-of-2 step2">
+                <h3>Become a Partner</h3> <!--Come up with better term later-->
+                <div class="donationStep">
+                    <div>1</div>
+                    <p>Email us at example@gmail.com</p>
+                </div>
+                <div class="donationStep">
+                    <div>2</div>
+                    <p>We will provide some login information</p>
+                </div>
+                <div class="donationStep">
+                    <div>3</div>
+                    <p>We will enter your locations in the database</p>
+                </div>
+                <div class="donationStep">
+                    <div>4</div>
+                    <p>We will set up the payment information</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col span-1-of-2 suppliers">
+                <h3>Current Suppliers</h3>
+                <img src="resources/img/uberLogo.jpg">
+            </div>
+            <div class="col span-1-of-2 partners">
+                <h3>Current Partners</h3>
+                <img src="resources/img/redCrossLogo.jpg">
+            </div>
+        </div>
+    </section>
+
+    <section class="section-bestOfIt" id="best">
+        <div class="row">
+            <h2>Making the Best Of It</h2>
+        </div>
+
+        <div class="row">
+            <div class="col span-1-of-3 opportunity">
+                <h3>Opportunity</h3>
+                <ion-icon name="bulb-outline" class="icon-b"></ion-icon>
+                <p>
+                    Covid-19 has definitely had a big impact on our lives, but if we look at 
+                    the situation from a positive angle, we can see that we have more time on 
+                    our hands now. Even though it is important to relax, which you should definitely 
+                    do more of during this time, it is also important to make good use of your extra 
+                    time. Some things you can do:
+                </p>
+                <ul>
+                    <li> <ion-icon name="basketball-outline" class="icon-s"></ion-icon>
+                        Develop your hobbies</li>
+                    <li> <ion-icon name="add-outline" class="icon-s"></ion-icon>
+                        Learn a new skill</li>
+                    <li> <ion-icon name="book-outline" class="icon-s"></ion-icon>
+                        Review your academic work</li>
+                    <li> <ion-icon name="document-outline" class="icon-s"></ion-icon>
+                        If a rising senior, start thinking about college apps</li>
+                </ul>
+                <p> Additionally, make sure to keep some time for yourself and catch up with friends 
+                    and family.</p>
+                <ul>
+                    <li> <ion-icon name="phone-portrait-outline" class="icon-s"></ion-icon>
+                        Call and text friends</li>
+                    <li> <ion-icon name="bicycle-outline" class="icon-s"></ion-icon>
+                        Exercise daily</li>
+                    <li> <ion-icon name="tv-outline" class="icon-s"></ion-icon>
+                        Catch up on your favorite show or discover a new one</li>
+                </ul>
+
+            </div>
+            <div class="col span-1-of-3 education">
+                <h3>Education</h3>
+                <ion-icon name="school-outline" class="icon-b"></ion-icon>
+                <p>
+                    Even though school closures might bring upon the thought of no homework, 
+                    there isn't any good excuse for not learning if you still can. Knowledge 
+                    can't hurt you, so do take it upon yourselves to revisit school subjects 
+                    from this year, or visit educational websites such as <a href="https://khanacademy.org" 
+                    target = "_blank">khanacademy.org</a>. 
+                    A great place to build upon skills and academically-oriented hobbies is 
+                    <a href="https://udemy.com" target="_blank">udemy.com</a>, 
+                    where you can learn anything from coding to social media
+                    marketing. Additionally, if you are looking for help on any subjects, 
+                    Big Brain Tutoring, a local and free tutoring service run by Westwood High 
+                    School students, is a great service to look at. More information about them can be 
+                    found at <a href="https://bigbraintutoring.net" target="_blank">bigbraintutoring.net</a>.<sup>*</sup> 
+                </p>
+            </div>
+            <div class="col span-1-of-3 safe">
+                <h3>Stay Home &amp; Stay Safe</h3>
+                <ion-icon name="home-outline" class="icon-b"></ion-icon>
+                <p>
+                    It is important that during this difficult time, we all stay home to prevent the 
+                    disease from spreading. We have to prove that we as humans have enough will-power 
+                    and determination to stop the disease from taking us out, and the only way we can 
+                    do that is we follow proper safety guidelines. We are fortunate enough to have the 
+                    internet to keep us all connected, so let us use that to our advantage and discover 
+                    things we never had a chance to.   
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="footnote">
+        <div class="row">
+            <p><sup>*</sup> Big Brain Tutoring has canceled sessions from May 11 - 22 due to AP Exams
+            and from May 25 - June 5, the number of sessions per day will be limited, but from June 6 
+            onwards, the number of sessions per day will return to normal. 
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="row">
+            <ul class="navFooter">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#help">How To Help</a></li>
+                <li><a href="#further">A Step Further</a></li>
+                <li><a href="#best">Making The Best Of It</a></li>
+            </ul>
+            <ul class="socialMedia">
+                <li><a href="https://instagram.com" target="_blank"><ion-icon name="logo-instagram" class="icon-s"></ion-icon></a></li>
+                <li><a href="https://linkedin.com" target="_blank"><ion-icon name="logo-linkedin" class="icon-s"></ion-icon></a></li>
+            </ul>
+        </div>
+        <div class="row copyright">
+            Copyright &copy; 2020 by Heroes For Heroes. All rights reserved.
+        </div>
+
+    </footer>
+
+
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="resources/script.js"></script>-->
+    <script src="finalJS/bundle.js"></script>-->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLC3mud_dvTIR6fpIc-PAJ85XzKI1HT9g&callback=initMap"></script>-->
+
+
+
+</body>
+</html>
