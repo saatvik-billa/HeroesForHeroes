@@ -1,0 +1,538 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+.row {
+    max-width: 1200px;
+    margin: 0 auto; /* makes the row centered */
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    text-rendering: optimizeLegibility;  
+}
+
+header {
+    /*background-image: linear-gradient(rgb(228, 174, 174, 0.3), rgb(228, 174, 174, 0.3)), url(../img/mainImage.jpg);*/
+    background-color: #74b9ff;
+    height: 85vh;
+    background-size: cover; 
+    background-position: center;
+}
+
+.clearfix {zoom : 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block; 
+    height: 0;
+    visibility: hidden;
+}
+
+/*****************************/
+/* ---- MAIN NAVIGATION ---- */
+/*****************************/
+
+nav {
+    background-color: #fff;
+    height: 100px;   
+}
+
+.dropdown {
+    display: none; 
+    font-size: 24px;
+    float: right; 
+    margin-top: 30px;
+    margin-right: 20px;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 10px; 
+}
+
+.dropdown-content a {
+    float: none; 
+    display: block; 
+    text-align: left;
+    text-decoration: none; 
+    font-size: 20px;
+    color: #000; 
+    background-color: #fff;
+    margin-right: 20px; 
+    padding: 5px;
+    border: 1px solid #000;      
+}
+
+.dropdown-content a:active {
+    background-color: rgba(255, 255, 255, 0.795);
+}
+
+.dropdown-content a:first-of-type{
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+.dropdown-content a:last-of-type {
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+.dropdown:hover .dropdown-content, .dropdown:active .dropdown-content {
+    display: block; 
+}
+
+.logo {
+    height: 70px; 
+    width: auto; 
+    float: left;
+    margin-left: 6%;
+    margin-top: 15px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 40px;
+    margin-right: 18%; 
+}
+
+.main-nav li {
+    display: inline-block; 
+    margin-left: 40px;
+}
+
+.main-nav li a:link, .main-nav li a:visited { 
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+    padding: 10px;
+    transition: border-bottom;    
+}
+
+.main-nav li a:hover, .main-nav li a:active {
+    border-bottom: 2px solid #3498db;
+}
+
+/*****************************/
+/* ---- SECTION 1 ---- */
+/*****************************/
+
+h1 {
+    margin-top: 8%;
+    margin-left: 5%; 
+    font-size: 45px;
+    text-transform: uppercase;  
+}
+
+.graphics img {
+    width: 200px;
+    height: auto; 
+    float: left;
+    margin-left: 4%;
+    margin-top: 30px;   
+}
+
+.graphics img:nth-child(2) {
+    margin-top: 85px;
+    margin-left: 7%;  
+}
+
+.graphics img:last-of-type {
+    margin-top: 40px;
+    margin-left: 7%;  
+}
+
+.headerButton {
+    margin-top: 60px;
+    margin-left: 85px;
+}
+
+.headerButton a:link, .headerButton a:visited {
+    border-radius: 30px; 
+    background-color: #f1c40f;
+    text-decoration: none;
+    padding: 15px 15px;
+    color: #000;
+    transition: background-color 0.2s; 
+}
+
+.headerButton a:hover, .headerButton a:active {
+    background-color: #d3ac10;  
+}
+
+.statistics p {
+    text-align: center;
+    font-weight: 220;  
+}
+
+.statistics p:first-of-type {
+    margin-top: 95px; 
+}
+
+.statistics p {
+    margin-top: 50px;  
+}
+
+.emphasize {
+    display: block; 
+    font-size: 45px; 
+    color: #f1c40f;
+    font-weight: bold;  
+}
+
+/**************************************************/
+/* ---- SECTION ABOUT US / FRONTLINE WORKERS ---- */
+/**************************************************/
+
+h2 {
+    margin-top: 20px; 
+    text-transform: uppercase; 
+    font-size: 40px; 
+    font-weight: 250;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 15px;
+}
+
+.section-about {
+    background-color: #fff;
+}
+
+.section2and3 {
+    margin-top: 40px; 
+    line-height: 45px;
+    font-weight: 280; 
+}
+
+.donateButton:link, .donateButton:visited {
+    display: block; 
+    text-decoration: none; 
+    color: #e7e7e7; 
+    border: 0; 
+    background-color: #3498db; 
+    border-radius: 30px; 
+    padding: 5px 15px;
+    margin-top: 20px;
+    width: 22%;
+    transition: color 0.2s, background-color 0.2s;  
+}
+
+
+.section2and3 .donateButton:hover, .section2and3 .donateButton:active {
+    color: #000; 
+    background-color: #3090cf; 
+}
+
+.footnote {
+    background-color: #fff;
+    margin-bottom: 30px;
+    margin-left: 0px;   
+}
+
+.footnote p {
+    font-size: 12px; 
+}
+
+.section-about img {
+    height: auto; 
+    width: 450px;
+    float: right; 
+    margin-top: 40px;
+    border: 2px solid #3498db;
+    margin-bottom: 5px;
+    overflow: auto;  
+}
+
+.emergency p {
+    float: right;
+    margin-bottom: 40px;   
+    font-size: 12px; 
+}
+
+
+/****************************************/
+/* ---- SECTION INSTRUCTIONS & MAP ---- */
+/****************************************/
+
+.section-instructions {
+    background-color: #e7e7e7;
+}
+
+.instructions {
+    margin-top: 40px; 
+}
+
+.instructions ul {
+    list-style: none;
+    line-height: 45px;
+}
+
+.instructions ul li {
+    margin-bottom: 15px;
+    font-weight: 220; 
+}
+
+.instructions ul li:last-of-type {
+    margin-bottom: 25px; 
+}
+
+.icon-s {
+    display: inline-block;
+    color: #3498db;
+    margin-right: 15px;   
+}
+
+.map {
+    height: 400px; 
+    width: 60%;
+    float: left;
+    margin-top: 40px;
+    margin-left: 10%; 
+    border: 2px solid #3498db;  
+}
+
+.table {
+    height: 400px; 
+    width: 28%;
+    float: right;
+    margin-top: 40px;
+    margin-left: 2%; 
+    overflow: auto; 
+}
+
+.table ul li {
+    list-style: none;
+    padding: 5%;
+    font-weight: 220;
+    font-size: medium;
+    transition: background-color 0.2s;
+    background-color: #93d7df; 
+    border-radius: 20px; 
+    margin-bottom: 10px;    
+}
+
+.table ul li p {
+    margin-top: 3px; 
+    font-size: small; 
+}
+
+.table .locations .selectButton {
+    display: inline-block;    
+    font-size: 0.9em;
+    padding: 3px;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: #fff; 
+    border: none;
+    transition: background-color 0.2s;    
+}
+
+.table .locations .selectButton:hover {
+    background-color: #22a6b3; 
+}
+
+.donationList {
+    margin-left: 400px;
+}
+
+.donationList ul {
+    list-style: none; 
+}
+
+.section-instructions .donateButton {
+    float: left;
+    margin-left: 10%;
+    padding: 15px 10px;
+    width: 14%;
+    text-align: center;
+    font-weight: 220;
+    margin-top: 20px;
+}
+
+.section-instructions .icon-b {
+    float: left;
+    margin-left: 10%;  
+}
+
+.inputBox {
+    float: left;
+    border: none;
+    margin-top: 32px;
+    margin-left: 20px; 
+    border-radius: 10rem; 
+    font-size: .8rem;
+    padding: 10px 8px;
+    font-weight: 220; 
+    width: 250px;     
+}
+
+/***********************************/
+/* ---- SECTION FURTHER STEPS ---- */
+/***********************************/
+
+.section-further {
+    margin-bottom: 30px; 
+}
+
+h3 {
+    font-weight: 220;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h3:after {
+    display: block; 
+    height: 2px; 
+    background-color: #3498db;
+    content: " "; 
+    width: 100px; 
+    margin: 0px auto; 
+    margin-top: 15px;
+}
+
+.step1 {
+    margin-bottom: 30px; 
+}
+
+.step1 img {
+    width: 300px; 
+    height: auto;
+}
+
+.firstStep img {
+    margin-left: 20%;  
+}
+
+.secondStep img {
+    margin-left: 20%; 
+}
+
+.step1 p {
+    font-size: 17px; 
+    font-weight: 220;
+    text-align: center;  
+}
+
+.firstStep {
+    margin-left: 2.5%; 
+}
+
+.firstStep, .secondStep {
+    width: 40%;
+    margin-top: 5%;  
+}
+
+.secondStep {
+    float: right;
+    margin-top: 7%;
+    margin-right: 2.5%;   
+}
+
+.arrow {
+    width: 10%;
+    margin-left: 3.1%;
+    padding: 0px;
+    text-align: center;    
+}
+
+.arrow img {
+    width: 80px; 
+    height: auto;
+    margin-top: 140%;  
+}
+
+.partners img {
+    width: 100px; 
+    height: auto;
+    margin: 30px 20px 0px 20px;
+}
+
+.comingSoon p {
+    font-weight: 220; 
+    font-size: 15px;
+    margin-top: 20px;
+    line-height: 30px;  
+}
+
+/*******************************************/
+/* ---- SECTION MAKING THE BEST OF IT ---- */
+/*******************************************/
+
+.section-bestOfIt {
+    background-color: #e7e7e7;
+    padding-bottom: 15px; 
+}
+
+.opportunity p, .education p, .safe p {
+    margin-top: 20px; 
+    font-weight: 230;
+    line-height: 40px;
+}
+
+.opportunity ul {
+    list-style: none; 
+}
+
+.opportunity ul li {
+    margin-top: 20px; 
+    font-weight: 230;
+    line-height: 20px;
+    font-size: 15px; 
+}
+
+.icon-b {
+    color: #3498db;
+    font-size: 40px;
+    margin-left: 45%; 
+    margin-top: 30px;
+}
+
+.education p a:link, .education p a:visited {
+    text-decoration: none;
+    color: #3498db;  
+}
+
+/*******************************************/
+/* ---- SECTION FOOTER ---- */
+/*******************************************/
+
+footer {
+    background-color: rgb(32, 32, 32);
+    padding: 20px;  
+}
+
+.navFooter li, .socialMedia li {
+    display: inline-block; 
+    list-style: none;
+    font-weight: 220;
+    margin-right: 20px;
+    margin-top: 5px;     
+}
+
+.navFooter {
+    float: left;
+    font-size: 15px;
+}
+
+.socialMedia {
+    float: right;
+    font-size: 20px;  
+}
+
+.navFooter li a, .socialMedia li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.copyright {
+    color: #fff; 
+    font-size: 12px;
+    text-align: center;
+    font-weight: 220;
+    margin-top: 20px;    
+}
